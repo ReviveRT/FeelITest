@@ -1,16 +1,16 @@
-import React, { useEffect,useState } from 'react'
+import React, { useState } from 'react'
 import PersonCart from './personCart'
-import MainSection from './mainSection.module.css'
+import mainSection from './mainSection.module.css'
  
-function mainSection(props) {
+function MainSection(props) {
 
-    const [search,setSearch] = useState('')
-    const [select,setSelect] = useState('')
+    const [search,setSearch] = useState("")
+    const [select,setSelect] = useState()
    
   return (
-    <div className={MainSection.container}>
-        <div className={MainSection.search_container}>
-            <input placeholder='Find Actor/Actress' type="search" onSelect={(e) => {
+    <div className={mainSection.container}>
+        <div className={mainSection.search_container}>
+            <input placeholder='Find Actor(ess)' type="search" onSelect={(e) => {
                 setSearch(e.target.value)
             }} />
             <select name="select" id="select" onChange={(e) => {
@@ -18,11 +18,11 @@ function mainSection(props) {
             }}>
                 <option value="c_act_asc">Character Name Ascending Order</option>
                 <option value="c_act_des">Character Name Descending Order</option>
-                <option value="a_act_asc">Actor's Name Ascending Order</option>
-                <option value="a_act_des">Actor's Name Descending Order</option>
+                <option value="a_act_asc">Actors Name Ascending Order</option>
+                <option value="a_act_des">Actors Name Descending Order</option>
             </select>
         </div>
-        <div className={MainSection.main}>
+        <div className={mainSection.main}>
             {  props.src.filter(e => {
                 if(search == ""){
                     return e
@@ -52,4 +52,4 @@ function mainSection(props) {
   )
 }
 
-export default mainSection
+export default MainSection
