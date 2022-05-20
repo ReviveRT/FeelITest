@@ -1,0 +1,46 @@
+.container {
+  width: 100%;
+  height: auto;
+}
+.container .search_container {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.container .search_container input {
+  margin: 0 20px;
+  width: 250px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: "Fira Sans";
+  border: 2px solid rgba(0, 0, 0, 0.233);
+  padding: 5px;
+}
+.container .search_container input:focus {
+  outline: none;
+  border: 2.5px solid rgba(0, 0, 0, 0.815);
+}
+.container .search_container select {
+  margin: 0 20px;
+  width: 250px;
+  height: 50px;
+  cursor: pointer;
+  border: 2px solid rgba(0, 0, 0, 0.253);
+  font-size: 15px;
+  font-family: "Fira Sans";
+}
+.container .search_container select:focus {
+  outline: none;
+  border: 2.5px solid rgba(0, 0, 0, 0.815);
+}
+.container .main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}/*# sourceMappingURL=mainSection.module.css.map */

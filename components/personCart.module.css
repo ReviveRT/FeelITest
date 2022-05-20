@@ -1,0 +1,17 @@
+.container .cart_block {
+  width: 350px;
+  height: 500px;
+  border: 2px solid rgba(0, 0, 0, 0.185);
+  margin: 15px;
+}
+.container .cart_block .subtitle {
+  padding: 15px;
+}
+.container .cart_block .subtitle h3 {
+  margin-bottom: 5px;
+  font-family: "Fira Sans";
+}
+.container .cart_block .subtitle p {
+  margin-bottom: 5px;
+  font-family: "Fira Sans";
+}/*# sourceMappingURL=personCart.module.css.map */
